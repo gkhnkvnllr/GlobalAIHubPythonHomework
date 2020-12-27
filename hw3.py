@@ -15,14 +15,13 @@ def main():
 
 
 def get_word_list():
-    get_words = open("C:\\Users\gkhnk\Desktop\words.txt","r+") ### BUNU TEXT DOSYASINI ATTIĞIN YERE GÖRE DÜZENLE
+    get_words = open("C:\\Users\gkhnk\Desktop\words.txt","r+") ### It depends to your file directory
     words = get_words.read()
     
     word_list = words.split()
     
     global cpu_choice
     cpu_choice = random.choice(word_list)
-    #print(cpu_choice) ########## BUNU SİLMEYİ UNUTMA ############
     
     return cpu_choice
 
